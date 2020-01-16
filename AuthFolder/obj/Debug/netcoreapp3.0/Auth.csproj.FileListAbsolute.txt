@@ -1,0 +1,11 @@
+D:\Users\bsi50129\.vscode\Task OOP\AuthFolder\obj\Debug\netcoreapp3.0\Auth.csprojAssemblyReference.cache
+D:\Users\bsi50129\.vscode\Task OOP\AuthFolder\obj\Debug\netcoreapp3.0\Auth.AssemblyInfoInputs.cache
+D:\Users\bsi50129\.vscode\Task OOP\AuthFolder\obj\Debug\netcoreapp3.0\Auth.AssemblyInfo.cs
+D:\Users\bsi50129\.vscode\Task OOP\AuthFolder\bin\Debug\netcoreapp3.0\Auth.exe
+D:\Users\bsi50129\.vscode\Task OOP\AuthFolder\bin\Debug\netcoreapp3.0\Auth.deps.json
+D:\Users\bsi50129\.vscode\Task OOP\AuthFolder\bin\Debug\netcoreapp3.0\Auth.runtimeconfig.json
+D:\Users\bsi50129\.vscode\Task OOP\AuthFolder\bin\Debug\netcoreapp3.0\Auth.runtimeconfig.dev.json
+D:\Users\bsi50129\.vscode\Task OOP\AuthFolder\bin\Debug\netcoreapp3.0\Auth.dll
+D:\Users\bsi50129\.vscode\Task OOP\AuthFolder\bin\Debug\netcoreapp3.0\Auth.pdb
+D:\Users\bsi50129\.vscode\Task OOP\AuthFolder\obj\Debug\netcoreapp3.0\Auth.dll
+D:\Users\bsi50129\.vscode\Task OOP\AuthFolder\obj\Debug\netcoreapp3.0\Auth.pdb

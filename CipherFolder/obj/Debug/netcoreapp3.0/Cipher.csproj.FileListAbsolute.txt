@@ -1,0 +1,11 @@
+D:\Users\bsi50129\.vscode\Task OOP\CipherFolder\obj\Debug\netcoreapp3.0\Cipher.csprojAssemblyReference.cache
+D:\Users\bsi50129\.vscode\Task OOP\CipherFolder\obj\Debug\netcoreapp3.0\Cipher.AssemblyInfoInputs.cache
+D:\Users\bsi50129\.vscode\Task OOP\CipherFolder\obj\Debug\netcoreapp3.0\Cipher.AssemblyInfo.cs
+D:\Users\bsi50129\.vscode\Task OOP\CipherFolder\bin\Debug\netcoreapp3.0\Cipher.exe
+D:\Users\bsi50129\.vscode\Task OOP\CipherFolder\bin\Debug\netcoreapp3.0\Cipher.deps.json
+D:\Users\bsi50129\.vscode\Task OOP\CipherFolder\bin\Debug\netcoreapp3.0\Cipher.runtimeconfig.json
+D:\Users\bsi50129\.vscode\Task OOP\CipherFolder\bin\Debug\netcoreapp3.0\Cipher.runtimeconfig.dev.json
+D:\Users\bsi50129\.vscode\Task OOP\CipherFolder\bin\Debug\netcoreapp3.0\Cipher.dll
+D:\Users\bsi50129\.vscode\Task OOP\CipherFolder\bin\Debug\netcoreapp3.0\Cipher.pdb
+D:\Users\bsi50129\.vscode\Task OOP\CipherFolder\obj\Debug\netcoreapp3.0\Cipher.dll
+D:\Users\bsi50129\.vscode\Task OOP\CipherFolder\obj\Debug\netcoreapp3.0\Cipher.pdb
