@@ -10,7 +10,10 @@ namespace cartGenerator
 {
     public class cartGenerate
     {
+        public double discount;
         private List<carts> mycarts = new List<carts>();
+
+        private StringBuilder _addFile = new StringBuilder();
         public cartGenerate addItem(int price, int quantity = 1)
         {
             mycarts.Add(new carts(mycarts.Count + 1, price, quantity));
@@ -29,44 +32,53 @@ namespace cartGenerator
         public int totalItems()
         {
             int total = mycarts.Count();
+            _addFile.Append("Total Item :" +" "+total + "\n");
             return total;
         }
         public int totalQuantity()
         {
             int totalquantity = mycarts.Sum(u => u.quantity);
+            _addFile.Append("Total Quantity :" +" "+totalquantity + "\n");
             return totalquantity;
         }
-        public int totalPrice()
+        public double totalPrice()
         {
-            int totalPrice = mycarts.Sum(u => u.quantity*u.price);
+            
+            double totalPrice = mycarts.Sum(u => u.quantity*u.price);
+            totalPrice -= totalPrice * discount;
+            _addFile.Append("Total Price :" +" "+totalPrice + "\n");
             return totalPrice;
         }
-        // public List<carts> showAll()
-        // {
-        //     foreach(int item in mycarts)
-        //     {
-        //         Console.WriteLine("item_id : "+item.id+"price : "+item.price+"quantity : "+item.quantity);
-        //         Console.WriteLine("\n");
-        //     }
-        //     return mycarts;
-        // }
+        public void showAll()
+        {
+            _addFile.Append("ITEM" + "  " + " PRICE" + "  " + "QUANTITY" + "\n");
+            foreach(var i in mycarts)
+            {
+                carts mycarts = (carts)i;
+                Console.WriteLine("{0}    {1}    {2}", mycarts.id,mycarts.price, mycarts.quantity);
+                string items = Convert.ToString(mycarts.id);
+                string quan = Convert.ToString(mycarts.quantity);
+                string price = Convert.ToString(mycarts.price);
+                _addFile.Append(items + "      " + price + "    " + quan + "\n");
+            }
+        }
 
-        // public checkout()
-        // {
-        //     string path = Path.Combine(Environment.CurrentDirectory, $"Purchase {DateTime.Now.Year}-{DateTime.Now.Month}-{DateTime.Now.Day}-{DateTime.Now.Hour}-{DateTime.Now.Minute}-{DateTime.Now.Second}.txt");
-        //     if (!System.IO.File.Exists(path))
-        //     {
-        //         using (StreamWriter fs = File.CreateText(path))
-        //         {
-        //             fs.WriteLine("[Checkout Belanjaan]\n");
-        //             foreach (var cart in mycarts)
-        //             {
-        //                 fs.WriteLine($"Purchase ID : {cart.purchase_id}\tPrice : {cart.price}\tQuantity : {cart.quantity} =>\t{cart.price*cart.quantity}");
-        //             }
-        //             fs.WriteLine($"\nTotal Belanjaan : \t\t\t\t{totalPrice()}");
-        //         }
-        //     }
-        // }
+        public void checkout()
+        {
+            string path = Path.Combine(Environment.CurrentDirectory, $"Purchase {DateTime.Now.Year}-{DateTime.Now.Month}-{DateTime.Now.Day}-{DateTime.Now.Hour}-{DateTime.Now.Minute}-{DateTime.Now.Second}.txt");
+            if (!System.IO.File.Exists(path))
+            {
+                using (StreamWriter fs = File.CreateText(path))
+                {
+                    string _filePath = "D://";
+                    string fileName ="Cart.txt";
+                    File.Delete(fileName);
+
+                    File.AppendAllText(_filePath+fileName, _addFile.ToString());
+                    _addFile.Clear();      
+                }
+            }
+        }
 
     }
     class carts

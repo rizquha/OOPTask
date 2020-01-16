@@ -25,7 +25,8 @@ namespace Cart
             Console.WriteLine("Total Item : "+cart.totalItems());
             Console.WriteLine("Total Quantity : "+cart.totalQuantity());
             Console.WriteLine("Total Price : "+cart.totalPrice());
-            // cart.showAll();
+            cart.showAll();
+            cart.checkout();
         }
     }
 }
